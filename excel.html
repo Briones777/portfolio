@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Billing Ledger and Printable Statement of Account in Excel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap" rel="stylesheet">
+    <style>
+
+       body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: whitesmoke;
+            opacity: 0.8;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+       }
+
+       header {
+        border: 1px solid transparent;
+        padding: 20px;
+        color: #f7dc6f;
+        margin: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;
+       }
+
+       .content-container {
+            background-color:white;
+            color: black;
+            margin: 50px;
+            margin-top: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 60px;
+       }
+
+       hr{
+            height: 4px; /* Adjust thickness */
+            background-color: rgb(12, 12, 12); /* Change color */
+            border: none; /* Remove default border */
+       }
+
+
+       ul.checked-list {
+            list-style: none;
+            padding: 10px;
+            text-align: left;
+        }
+        ul.checked-list li::before {
+            content: "\f00c"; /* Font Awesome checkmark */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: green;
+            margin-right: 8px;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        .conclusion h3 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <h1> Microsoft Excel 2024 </h1>
+        <h4 style="color: white;"> Experience in Building an Excel workbook for Billing Ledgers and SOA </h4>
+    </header>
+    <div class="container mt-5">
+        <section class="content-container">
+            <h2>Creating Billing Ledger and Printable Statement of Account in Excel</h2>
+            <p>Managing finances efficiently is crucial for any business. In this guide, we will explore how to create a billing ledger and generate a printable statement of account using Excel.<br/> 
+                <h3>Enhancing Financial Tracking with Excel</h3>
+                <p>Excel is a powerful tool for businesses and individuals looking to streamline financial tracking. By leveraging functions such as VLOOKUP, XLOOKUP, and INDEX & MATCH, you can efficiently pull data from multiple sources, reducing manual entry and errors.</p>
+                <p>Creating a billing ledger not only helps in monitoring payments but also improves financial transparency. Automating calculations and using Excel’s formatting tools ensure that statements of account are both professional and easy to read.</p>
+                <p>Mastering these features will elevate your data management skills, making financial record-keeping more efficient and accurate. Start exploring these Excel functions today to optimize your billing processes!</p>
+            <hr/>
+
+            <h3>1. Setting Up the Billing Ledger</h3>
+            <p>To create a billing ledger, follow these steps:</p>
+            <ul class="checked-list">
+                <li>Open Microsoft Excel and create a new worksheet.</li>
+                <li>Set up column headers such as Date, Invoice Number, Customer Name, Description, Amount, Payments, and Balance.</li>
+                <li>Use formulas like <code>=SUM()</code> and <code>=A2-B2</code> to calculate balances.</li>
+                <li>Format the table for better readability using bold headers and alternating row colors.</li>
+            </ul>
+            
+            <h3>2. Automating Calculations</h3>
+            <p>To ensure automatic updates:</p>
+            <ul class="checked-list">
+                <li>Use <code>=SUM(range)</code> for total amounts.</li>
+                <li>Apply conditional formatting to highlight overdue balances.</li>
+                <li>Use data validation to prevent errors in entries.</li>
+            </ul>
+            
+            <h3>3. Using Lookup Functions for Data Sourcing</h3>
+            <p>To pull data from another database spreadsheet:</p>
+            <ul class="checked-list">
+                <li><strong>VLOOKUP:</strong> Search for a value in a column and return data from another column.</li>
+                <pre><code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></pre>
+                
+                <li><strong>XLOOKUP:</strong> A more flexible lookup function that searches for a value and returns results from any column.</li>
+                <pre><code>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found])</code></pre>
+                
+                <li><strong>INDEX & MATCH:</strong> Use INDEX to return data and MATCH to find its row or column position.</li>
+                <pre><code>=INDEX(return_range, MATCH(lookup_value, lookup_column, 0))</code></pre>
+            </ul>
+            
+            <h3>4. Creating a Printable Statement of Account</h3>
+            <p>Follow these steps to make the statement printable:</p>
+            <ul>
+                <li>Go to the <strong>Page Layout</strong> tab and set margins to “Narrow.”</li>
+                <li>Insert your company’s logo and details at the top.</li>
+                <li>Use the <strong>Print Titles</strong> feature to repeat column headers on every page.</li>
+                <li>Preview using <strong>Print Preview</strong> and adjust the scaling if necessary.</li>
+            </ul>
+            
+            <h3>5. Exporting as PDF</h3>
+            <p>To share the statement digitally:</p>
+            <ul class="checked-list">
+                <li>Go to <strong>File</strong> → <strong>Save As</strong>.</li>
+                <li>Select <strong>PDF</strong> as the format.</li>
+                <li>Click <strong>Options</strong> to select a specific range if needed.</li>
+            </ul><hr/>
+
+            <div class="conclusion">
+                <h3>Conclusion</h3><br/>
+                <p>By following these steps, you can create a well-structured billing ledger and a professional, printable statement of account using Excel. Utilizing lookup functions like <code>VLOOKUP</code>, <code>XLOOKUP</code>, and <code>INDEX & MATCH</code> enhances data accuracy and efficiency.</p><br/><hr/>
+                
+                <h3>Enhancing Financial Tracking with Excel</h3><br/>
+                <p>Excel is a powerful tool for businesses and individuals looking to streamline financial tracking. By leveraging functions such as VLOOKUP, XLOOKUP, and INDEX & MATCH, you can efficiently pull data from multiple sources, reducing manual entry and errors.</p>
+                <p>Creating a billing ledger not only helps in monitoring payments but also improves financial transparency. Automating calculations and using Excel’s formatting tools ensure that statements of account are both professional and easy to read.</p>
+                <p>Mastering these features will elevate your data management skills, making financial record-keeping more efficient and accurate. Start exploring these Excel functions today to optimize your billing processes!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>🚀 This is just the beginning! If you’re looking for a passionate and continuously learning web developer, let’s connect! 🚀</p>
+    </footer>
+</body>
+</html>
